@@ -14,7 +14,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-size: cover;
+        
         background-repeat: no-repeat;
     }
 
@@ -50,7 +50,7 @@
         
         left: 20px;
         right: 20px;
-        margin-top: 35px;
+        margin-top: 15px;
     }
 
     img {
@@ -120,12 +120,9 @@
         border-radius: 0.75em;
         transition: transform 0.15s;
         transform-style: preserve-3d;
-        margin-top: 20px;
-        position: fixed;
-
-        left: 20px;
-        right: 20px;
-        margin: 5px;
+        margin-top: 150px;
+        
+        
         
     }
 
