@@ -125,25 +125,21 @@
     }
 
     .button, #reloadButton {
-        flex: 3;
+        flex: 1;
         font-weight: 600;
         color: #222638;
         text-transform: uppercase;
-        padding: 1.5em 2em;
+        padding: 0.8em 1.5em; /* Adjusted padding for smaller buttons */
         background: #f0f4ff;
         border: 2px solid #858ab1;
         border-radius: 0.5em;
         transition: transform 0.15s;
         transform-style: preserve-3d;
-        margin-top: 10px; /* Adjusted margin-top to provide space */
-        font-size: 16px;
+        margin-top: 10px;
+        font-size: 14px; /* Adjusted font size for smaller buttons */
     }
 
-    #flipCard {
-        order: 1;
-    }
-
-    #reloadButton {
-        order: 2;
+    #flipCard, #reloadButton {
+        width: 100%; /* Make both buttons take the full width */
     }
 }
