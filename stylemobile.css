@@ -125,7 +125,7 @@
         border-radius: 0.5em;
         transition: transform 0.15s;
         transform-style: preserve-3d;
-        margin-top: 70%; /* Adjusted margin-top percentage */
+        margin-top: 100%; /* Adjusted margin-top percentage */
         font-size: 16px;
     }
 
