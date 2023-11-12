@@ -8,7 +8,7 @@
     }
 
     body {
-        min-height: 100vh;
+        min-height: 820px;
         background-image: url(https://images2.alphacoders.com/941/941898.jpg);
         text-align: center;
         display: flex;
@@ -68,6 +68,7 @@
     }
 
     img {
+        margin-top: 400px;
         width: auto;
         height: auto;
         max-width: 360px;
@@ -136,7 +137,8 @@
     .buttons-container {
         display: flex;
         align-items: center;
-        margin-top: 130px;
+        margin-top: auto;
+        margin-bottom: 40px;
     }
 }
 
