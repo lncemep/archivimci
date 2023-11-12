@@ -126,27 +126,29 @@
 
     .buttons-container {
         display: flex;
-        justify-content: space-between; /* Adjusted to space buttons evenly */
         align-items: center;
         margin-top: 10px;
     }
-
-    .button, #reloadButton {
-        width: 150px; /* Adjusted fixed width for both buttons */
-        font-weight: 600;
-        color: #222638;
-        text-transform: uppercase;
-        padding: 0.8em 1.5em;
-        background: #f0f4ff;
-        border: 2px solid #858ab1;
-        border-radius: 0.5em;
-        transition: transform 0.15s;
-        transform-style: preserve-3d;
-        font-size: 14px;
-        margin-top: 10px;
-    }
-
-    #flipCard, #reloadButton {
-        margin-top: 10px;
-    }
 }
+
+.button, #reloadButton {
+    z-index: 1;
+    width: 300px; /* Adjusted width for better responsiveness */
+    height: 50px;
+    font-weight: 600;
+    color: #222638;
+    text-transform: uppercase;
+    padding: 0.8em 1.5em;
+    background: #f0f4ff;
+    border: 2px solid #858ab1;
+    border-radius: 0.5em;
+    transition: transform 0.15s;
+    font-size: 14px;
+}
+
+
+#flipCard, #reloadButton {
+    margin-top: 10px;
+    width: 100%; /* Make sure the buttons take the full width of the container */
+}
+
