@@ -124,22 +124,29 @@
         font-weight: 700;
     }
 
+    .buttons-container {
+        display: flex;
+        justify-content: space-between; /* Adjusted to space buttons evenly */
+        align-items: center;
+        margin-top: 10px;
+    }
+
     .button, #reloadButton {
-        flex: 1;
+        width: 150px; /* Adjusted fixed width for both buttons */
         font-weight: 600;
         color: #222638;
         text-transform: uppercase;
-        padding: 0.8em 1.5em; /* Adjusted padding for smaller buttons */
+        padding: 0.8em 1.5em;
         background: #f0f4ff;
         border: 2px solid #858ab1;
         border-radius: 0.5em;
         transition: transform 0.15s;
         transform-style: preserve-3d;
+        font-size: 14px;
         margin-top: 10px;
-        font-size: 14px; /* Adjusted font size for smaller buttons */
     }
 
     #flipCard, #reloadButton {
-        width: 100%; /* Make both buttons take the full width */
+        margin-top: 10px;
     }
 }
