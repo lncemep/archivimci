@@ -18,7 +18,7 @@
     }
 
     .centered-container {
-        margin-top: 10px; /* Adjusted margin for better spacing */
+        margin-top: 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -27,20 +27,20 @@
 
     .category-selection {
         flex: 1;
-        margin-top: 10px; /* Adjusted margin for better spacing */
+        margin-top: 10px;
         text-align: left;
         font-family: "Rubik", sans-serif;
     }
 
     .card {
         flex: 2;
-        border-radius: 0.5em; /* Adjusted border radius for a smoother look */
-        width: 90%; /* Adjusted width for better fit on smaller screens */
-        max-width: 100%;
-        perspective: 800px; /* Adjusted perspective for the flip effect */
+        border-radius: 0.5em;
+        width: 360px;
+        max-width: 400px; /* Adjusted max-width for a larger card */
+        perspective: 800px;
         cursor: pointer;
-        position: relative; /* Adjusted position to keep the card in the flow */
-        margin-top: 20px; /* Adjusted margin for better spacing */
+        position: relative;
+        margin-top: 20px;
     }
 
     img {
@@ -48,7 +48,7 @@
         height: auto;
         max-width: 100%;
         border: 2px solid #858ab1;
-        border-radius: 0.5em; /* Adjusted border radius for a smoother look */
+        border-radius: 0.5em;
     }
 
     .card-inner {
@@ -63,7 +63,8 @@
         }
 
     .front, .back {
-        width: 100%;
+        width: 360px;
+        max-width: 360px; /* Adjusted max-width for a larger front card */
         height: 100%;
         position: absolute;
         backface-visibility: hidden;
@@ -75,13 +76,13 @@
 
     .back {
         border: 2px solid #858ab1;
-        border-radius: 0.5em; /* Adjusted border radius for a smoother look */
+        border-radius: 0.5em;
         background-color: #f0f4ff;
         background-size: cover;
         color: black;
-        height: 280px; /* Adjusted height for better fit on smaller screens */
+        height: 280px;
         transform: rotateY(180deg);
-        font-size: 12px; /* Adjusted font size for better readability */
+        font-size: 12px;
         text-align: left;
     }
 
@@ -89,10 +90,10 @@
     .painting-author,
     .painting-description {
         font-family: 'Noto Serif Telugu', serif;
-        margin-top: 5px; /* Adjusted margin for better spacing */
+        margin-top: 5px;
         text-align: left;
-        padding: 5px; /* Adjusted padding for better spacing */
-        font-size: 12px; /* Adjusted font size for better readability */
+        padding: 5px;
+        font-size: 12px;
     }
 
     .title, .author {
@@ -104,13 +105,13 @@
         font-weight: 600;
         color: #222638;
         text-transform: uppercase;
-        padding: 1em 1.5em; /* Adjusted padding for better sizing */
+        padding: 1em 1.5em;
         background: #f0f4ff;
         border: 2px solid #858ab1;
-        border-radius: 0.5em; /* Adjusted border radius for a smoother look */
+        border-radius: 0.5em;
         transition: transform 0.15s;
         transform-style: preserve-3d;
-        margin-top: 300px; /* Adjusted margin for better spacing */
+        margin-top: 300px;
     }
 
     .button, #reloadButton {
@@ -128,7 +129,7 @@
             bottom: 0;
             background: #c4d4f9;
             border-radius: inherit;
-            box-shadow: 0 0 0 1px #8595b1, 0 0.3125em 0 0 #e2eeff; /* Adjusted box shadow for a subtle effect */
+            box-shadow: 0 0 0 1px #8595b1, 0 0.3125em 0 0 #e2eeff;
             transform: translate3d(0, 0.375em, -1em);
             transition: transform 0.15s, box-shadow 0.15s;
         }
@@ -142,4 +143,4 @@
                 box-shadow: 0 0 0 1px #8591b1, 0 0 #e2f3ff;
                 transform: translate3d(0, 0, -1em);
             }
-}
+}}
