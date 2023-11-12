@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Rubik:700&display=swap");
-@media (max-width: 480px) {
 
+@media (max-width: 414px) {
     * {
         margin: 0;
         padding: 0;
@@ -14,12 +14,11 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        
         background-repeat: no-repeat;
     }
 
     .centered-container {
-        margin-top: 20px;
+        margin-top: 10px; /* Adjusted margin for better spacing */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -27,26 +26,21 @@
     }
 
     .category-selection {
-        margin-top: 20px;
+        flex: 1;
+        margin-top: 10px; /* Adjusted margin for better spacing */
         text-align: left;
         font-family: "Rubik", sans-serif;
     }
 
-    .container {
-        flex: 1;
-
-    }
-
     .card {
-        flex: 1;
-        border-radius: 0.75em;
-        border: none;
-        width: 100%;
+        flex: 2;
+        border-radius: 0.5em; /* Adjusted border radius for a smoother look */
+        width: 90%; /* Adjusted width for better fit on smaller screens */
         max-width: 100%;
-        perspective: 1000px;
+        perspective: 800px; /* Adjusted perspective for the flip effect */
         cursor: pointer;
-        left: 20px;
-        right: 20px;
+        position: relative; /* Adjusted position to keep the card in the flow */
+        margin-top: 20px; /* Adjusted margin for better spacing */
     }
 
     img {
@@ -54,7 +48,7 @@
         height: auto;
         max-width: 100%;
         border: 2px solid #858ab1;
-        border-radius: 0.75em;
+        border-radius: 0.5em; /* Adjusted border radius for a smoother look */
     }
 
     .card-inner {
@@ -81,25 +75,24 @@
 
     .back {
         border: 2px solid #858ab1;
-        border-radius: 0.75em;
+        border-radius: 0.5em; /* Adjusted border radius for a smoother look */
         background-color: #f0f4ff;
         background-size: cover;
         color: black;
-        height: 350px;
+        height: 280px; /* Adjusted height for better fit on smaller screens */
         transform: rotateY(180deg);
-        font-size: 14px; /* Уменьшим размер шрифта */
+        font-size: 12px; /* Adjusted font size for better readability */
         text-align: left;
-
     }
 
     .painting-title,
     .painting-author,
     .painting-description {
         font-family: 'Noto Serif Telugu', serif;
-        margin-top: 10px;
+        margin-top: 5px; /* Adjusted margin for better spacing */
         text-align: left;
-        padding: 10px;
-        font-size: 14px; /* Уменьшим размер шрифта для текстовых элементов */
+        padding: 5px; /* Adjusted padding for better spacing */
+        font-size: 12px; /* Adjusted font size for better readability */
     }
 
     .title, .author {
@@ -107,33 +100,22 @@
     }
 
     .button, #reloadButton {
+        flex: 3;
         font-weight: 600;
         color: #222638;
         text-transform: uppercase;
-        padding: 1.25em 2em;
+        padding: 1em 1.5em; /* Adjusted padding for better sizing */
         background: #f0f4ff;
         border: 2px solid #858ab1;
-        border-radius: 0.75em;
+        border-radius: 0.5em; /* Adjusted border radius for a smoother look */
         transition: transform 0.15s;
         transform-style: preserve-3d;
-        margin-top: 150px;
-        
-        
-        
+        margin-top: 300px; /* Adjusted margin for better spacing */
     }
 
-    .button {
-        bottom: 100px; /* Отступ снизу для первой кнопки */
+    .button, #reloadButton {
         transition: transform 0.15s;
     }
-
-    #reloadButton {
-        bottom: 15px; /* Отступ снизу для второй кнопки */
-        transition: transform 0.15s;
-    }
-
-    
-
 
         .button::before, #reloadButton::before {
             position: absolute;
@@ -146,20 +128,18 @@
             bottom: 0;
             background: #c4d4f9;
             border-radius: inherit;
-            box-shadow: 0 0 0 2px #8595b1, 0 0.625em 0 0 #e2eeff;
-            transform: translate3d(0, 0.75em, -1em);
+            box-shadow: 0 0 0 1px #8595b1, 0 0.3125em 0 0 #e2eeff; /* Adjusted box shadow for a subtle effect */
+            transform: translate3d(0, 0.375em, -1em);
             transition: transform 0.15s, box-shadow 0.15s;
         }
 
-      
-
         .button:active, #reloadButton:active {
             background: #e9f1ff;
-            transform: translate(0em, 0.75em);
+            transform: translate(0em, 0.375em);
         }
 
             .button:active::before, #reloadButton:active::before {
-                box-shadow: 0 0 0 2px #8591b1, 0 0 #e2f3ff;
+                box-shadow: 0 0 0 1px #8591b1, 0 0 #e2f3ff;
                 transform: translate3d(0, 0, -1em);
             }
 }
