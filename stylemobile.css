@@ -125,38 +125,7 @@
         border-radius: 0.5em;
         transition: transform 0.15s;
         transform-style: preserve-3d;
-        margin-top: 80%; /* Adjusted margin-top percentage */
+        margin-top: 70%; /* Adjusted margin-top percentage */
         font-size: 16px;
     }
-
-
-    .button, #reloadButton {
-        transition: transform 0.15s;
-    }
-
-        .button::before, #reloadButton::before {
-            position: absolute;
-            content: "";
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: #c4d4f9;
-            border-radius: inherit;
-            box-shadow: 0 0 0 1px #8595b1, 0 0.3125em 0 0 #e2eeff;
-            transform: translate3d(0, 0.375em, -1em);
-            transition: transform 0.15s, box-shadow 0.15s;
-        }
-
-        .button:active, #reloadButton:active {
-            background: #e9f1ff;
-            transform: translate(0em, 0.375em);
-        }
-
-            .button:active::before, #reloadButton:active::before {
-                box-shadow: 0 0 0 1px #8591b1, 0 0 #e2f3ff;
-                transform: translate3d(0, 0, -1em);
-            }
 }
