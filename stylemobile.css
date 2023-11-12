@@ -25,10 +25,10 @@
         min-height: 100vh;
     }
 
-    .container::before {
-        content: '';
-        flex-grow: 1;
-    }
+        .container::before {
+            content: '';
+            flex-grow: 1;
+        }
 
     .centered-container {
         margin-top: 10px;
@@ -49,7 +49,7 @@
         flex: 2;
         border-radius: 0.5em;
         width: 360px;
-        max-width: 400px; /* Adjusted max-width for a larger card */
+        max-width: 400px;
         perspective: 800px;
         cursor: pointer;
         position: relative;
@@ -86,12 +86,12 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: 0px; /* Adjusted margin-top to prevent overlap with categories */
+        margin-top: 0px;
     }
 
     .back {
         width: 360px;
-        max-width: 360px; /* Adjusted max-width for a larger front card */
+        max-width: 360px;
         height: 100%;
         position: absolute;
         backface-visibility: hidden;
@@ -99,9 +99,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    }
-
-    .back {
         border: 2px solid #858ab1;
         border-radius: 0.5em;
         background-color: #f0f4ff;
@@ -138,7 +135,7 @@
         border-radius: 0.5em;
         transition: transform 0.15s;
         transform-style: preserve-3d;
-        margin-top: auto; /* Set margin-top to auto to stick the buttons to the bottom */
+        margin-top: 10px; /* Adjusted margin-top to provide space */
         font-size: 16px;
     }
 
@@ -149,5 +146,4 @@
     #reloadButton {
         order: 2;
     }
-
 }
