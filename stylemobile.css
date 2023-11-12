@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Rubik:700&display=swap");
 
-@media (max-width: 414px) {
+@media (max-width: 444px) {
     * {
         margin: 0;
         padding: 0;
@@ -8,6 +8,7 @@
     }
 
     body {
+        min-height: 100vh;
         background-image: url(https://images2.alphacoders.com/941/941898.jpg);
         text-align: center;
         display: flex;
@@ -62,11 +63,11 @@
         max-width: 400px;
         perspective: 800px;
         cursor: pointer;
-        margin-top: 0px;
+        position: relative;
+        margin-top: 5px;
     }
 
     img {
-        margin-top: 300px;
         width: auto;
         height: auto;
         max-width: 360px;
@@ -98,7 +99,6 @@
     }
 
     .back {
-        margin-top: 200px;
         width: 360px;
         max-width: 360px;
         height: 100%;
@@ -134,12 +134,9 @@
     }
 
     .buttons-container {
-        width: 300px;
-        height: 50px;
         display: flex;
         align-items: center;
-        margin-top: auto; /* Change margin-top to auto */
-        margin-top: 300px;
+        margin-top: 130px;
     }
 }
 
