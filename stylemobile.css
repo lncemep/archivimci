@@ -40,7 +40,7 @@
         perspective: 800px;
         cursor: pointer;
         position: relative;
-        margin-top: 50px;
+        margin-top: 20px;
     }
 
     img {
@@ -63,7 +63,20 @@
             transform: rotateY(180deg);
         }
 
-    .front, .back {
+    .front {
+        width: 360px;
+        max-width: 360px;
+        height: 100%;
+        position: absolute;
+        backface-visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 60px; /* Adjusted margin-top to prevent overlap with categories */
+    }
+
+    .back {
         width: 360px;
         max-width: 360px; /* Adjusted max-width for a larger front card */
         height: 100%;
