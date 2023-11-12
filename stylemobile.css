@@ -8,7 +8,7 @@
     }
 
     body {
-        min-height: 700px;
+        min-height: 500px;
         background-image: url(https://images2.alphacoders.com/941/941898.jpg);
         text-align: center;
         display: flex;
@@ -20,8 +20,8 @@
 
     .container {
         display: flex;
-        margin-top: auto;
-        margin-bottom: 100px;
+        margin-top: 150px;
+        
         justify-content: space-between;
         height: 280px;
         position: relative;
@@ -134,13 +134,11 @@
         font-weight: 700;
     }
 
-    .buttons-container {
-        display: flex;
-        align-items: center;
-        margin-top: auto;
-        margin-bottom: 0px;
+.buttons-container {
+    display: flex;
+    align-items: center;
+    margin-top: 130px; /* Change margin-top to auto */
     }
-}
 
 .button, #reloadButton {
     z-index: 1;
@@ -157,6 +155,5 @@
 }
 
 #flipCard, #reloadButton {
-    margin-top: 10px;
     width: 100%;
 }
