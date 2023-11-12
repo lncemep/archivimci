@@ -119,15 +119,16 @@
         font-weight: 600;
         color: #222638;
         text-transform: uppercase;
-        padding: 1.5em 2em; /* Adjusted padding for a larger button */
+        padding: 1.5em 2em;
         background: #f0f4ff;
         border: 2px solid #858ab1;
         border-radius: 0.5em;
         transition: transform 0.15s;
         transform-style: preserve-3d;
-        margin-top: 300px;
-        font-size: 16px; /* Adjusted font size for a larger button */
+        margin-top: 70%; /* Adjusted margin-top percentage */
+        font-size: 16px;
     }
+
 
     .button, #reloadButton {
         transition: transform 0.15s;
@@ -158,4 +159,4 @@
                 box-shadow: 0 0 0 1px #8591b1, 0 0 #e2f3ff;
                 transform: translate3d(0, 0, -1em);
             }
-}}
+}
