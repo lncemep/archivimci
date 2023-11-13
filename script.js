@@ -21,11 +21,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (container) {
             // Set a new margin-top value (adjust as needed)
-            var newMarginTop = 200; // Change this value according to your needs
+            var newMarginTop = 180; // Change this value according to your needs
             // Apply the new margin-top value to the container
             container.style.marginTop = newMarginTop + 'px';
         } else {
             console.error('Container not found.');
+        }
+
+        var containerButtons = document.getElementById('containerButtons');
+
+        if (containerButtons) {
+
+            var newMarginTop = 130; 
+
+            containerButtons.style.marginTop = newMarginTop + 'px';
+        } else {
+            console.error('containerButtons not found.');
         }
     });
 });
