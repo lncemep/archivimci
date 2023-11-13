@@ -1,21 +1,33 @@
-// script.js
+document.addEventListener('DOMContentLoaded', function () {
+    var reloadButton = document.getElementById('reloadButton');
+    var flipButton = document.getElementById('flipCard');
 
-// Get a reference to the reload button by its id
-var reloadButton = document.getElementById('reloadButton');
+    reloadButton.addEventListener('click', function () {
+        // Use the location object to reload the current page
+        location.reload();
+    });
 
-// Add a click event listener to the button
-reloadButton.addEventListener('click', function () {
-    // Use the location object to reload the current page
-    location.reload();
+    flipButton.addEventListener('click', function () {
+        // Hide the category container
+        var categoryContainer = document.getElementById('category-container');
+        if (categoryContainer) {
+            categoryContainer.style.display = 'none';
+        } else {
+            console.error('Category container not found.');
+        }
+
+        // Get a reference to the container by its id
+        var container = document.getElementById('myCard');
+
+        if (container) {
+            // Set a new margin-top value (adjust as needed)
+            var newMarginTop = 200; // Change this value according to your needs
+            // Apply the new margin-top value to the container
+            container.style.marginTop = newMarginTop + 'px';
+        } else {
+            console.error('Container not found.');
+        }
+    });
 });
 
-// Add an event listener to the "Dalej" button
-var reloadButton = document.getElementById('flipCard');
-reloadButton.addEventListener('click', function () {
-    // Hide the category container
-    var categoryContainer = document.getElementById('category-container');
-    categoryContainer.style.display = 'none';
 
-    // Remove the event listener after hiding the categories
-    reloadButton.removeEventListener('click', arguments.callee);
-});

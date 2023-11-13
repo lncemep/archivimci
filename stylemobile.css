@@ -20,7 +20,7 @@
 
     .container {
         display: flex;
-        margin-top: 150px;
+        margin-top: 20px;
         justify-content: space-between;
         height: 280px;
         position: relative;
