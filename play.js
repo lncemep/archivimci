@@ -1,9 +1,9 @@
 ﻿// Zdefiniowanie tablicy obrazów z nazwami, adresami URL obrazów, autorami, opisami i kategoriami.
 const paintings = [
-    { category: "Category 1", name: "Ornament z przedstawieniem plecionki celtyckiej", image: "https://2.bp.blogspot.com/-lCuEhU6MBJk/USyen7XQjvI/AAAAAAAAAAM/NitSjHTPWho/s1600/PLECIONKACELTYCKA.JPG", author: "Nieznany", description: ""}, //убрать
-    { category: "Category 1", name: "Wenus z Willendorfu", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Venus_von_Willendorf_01.jpg/800px-Venus_von_Willendorf_01.jpg", author: "Nieznany", description: "Data powstania: paleolit, około 22000 lat p.n.e. <br> Lokalizacja: Muzeum Historii Naturalnej w Wiedniu"},
-    { category: "Category 1", name: "Wenus z Lespugue", image: "https://media.cheggcdn.com/media/030/0304e528-a099-43ce-902e-ff962707eddc/materia___z_historii_sztuki_przed_i_staro__ytnej__page_003_image_0002-167e17dc1d43ec99f39-167E24E051A15CEA0AC.jpg", author: "Nieznany", description: "Data powstania: paleolit, około 26000-25000 lat p.n.e."},
-    { category: "Category 1", name: "Bizon z Altamiry (malowidło)", image: "https://cekis.pl/wp-content/uploads/2020/07/95372853_2524253117836628_1009027464397062144_o.jpg", author: "Nieznany", description: "Data powstania: około 15000-10000 lat p.n.e. <br> Lokalizacja: Hiszpania, jaskinia Altamira"},
+    { category: "Category 1", name: "Ornament z przedstawieniem plecionki celtyckiej", image: "https://2.bp.blogspot.com/-lCuEhU6MBJk/USyen7XQjvI/AAAAAAAAAAM/NitSjHTPWho/s1600/PLECIONKACELTYCKA.JPG", author: "Nieznany", description: "" }, //убрать
+    { category: "Category 1", name: "Wenus z Willendorfu", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Venus_von_Willendorf_01.jpg/800px-Venus_von_Willendorf_01.jpg", author: "Nieznany", description: "Data powstania: paleolit, około 22000 lat p.n.e. <br> Lokalizacja: Muzeum Historii Naturalnej w Wiedniu" },
+    { category: "Category 1", name: "Wenus z Lespugue", image: "https://media.cheggcdn.com/media/030/0304e528-a099-43ce-902e-ff962707eddc/materia___z_historii_sztuki_przed_i_staro__ytnej__page_003_image_0002-167e17dc1d43ec99f39-167E24E051A15CEA0AC.jpg", author: "Nieznany", description: "Data powstania: paleolit, około 26000-25000 lat p.n.e." },
+    { category: "Category 1", name: "Bizon z Altamiry (malowidło)", image: "https://cekis.pl/wp-content/uploads/2020/07/95372853_2524253117836628_1009027464397062144_o.jpg", author: "Nieznany", description: "Data powstania: około 15000-10000 lat p.n.e. <br> Lokalizacja: Hiszpania, jaskinia Altamira" },
     { category: "Category 1", name: "Malowidła z Tassili (Algieria) na Saharze", image: "http://3.bp.blogspot.com/-HajZlxN15yo/USyqg1zLsEI/AAAAAAAAACM/1jy_ssq5hCM/s1600/Malowid%C5%82a+z+Tassili+(Algieria)+na+Saharze.jpg", author: "Nieznany", description: "Data powstania: około 10000-6000 lat p.n.e. <br> Lokalizacja: Algeria" },
     { category: "Category 1", name: "Malowidła z Lascaux", image: "http://www.zsplast.gdynia.pl/historia_sztuki/kanon_dziel_obrazy/prehistoria/lascaux_ranny_bizon.jpg", author: "Nieznany", description: "Data powstania: około 17000-15000 lat p.n.e. <br> Lokalizacja: Francja, Akwitanija" },
     { category: "Category 1", name: "Zespół Stonehenge", image: "https://images5.alphacoders.com/131/1318724.jpeg", author: "Nieznany", description: "Data powstania: około 1400 lat p.n.e. <br> Lokalizacja: południowa Anglia" },
@@ -71,11 +71,6 @@ const paintings = [
     { category: "Category 2", name: "Kariatyda - podpora architektoniczna w formie postaci, najczęściej kobiecej spełniającej funkcję kolumny", image: "https://i1.wp.com/design-fly.ru/wp-content/uploads/2017/01/%D0%B02-13.jpg", author: "Nieznany", description: "Sztuka starożytnej Grecji" },
     { category: "Category 2", name: "Świątynia Ateny – Nike (Nike Apteros)", image: "https://o.quizlet.com/duPaxKu1dsbqT.XGtlKBFA.jpg", author: "Nieznany", description: "Sztuka starożytnej Grecji <br> Data powstania: około 425 lat p.n.e. <br> Lokalizacja: Grecja, Ateny" },
     { category: "Category 2", name: "Propyleje", image: "https://s3.eu-central-1.amazonaws.com/pressland-cms/cache/__original__/x3/20140407-athenes16.jpeg", author: "Nieznany", description: "Sztuka starożytnej Grecji <br> Data powstania: około 437 lat p.n.e. <br> Lokalizacja: Grecja, Ateny" },
-    { category: "Category 2", name: "", image: "", author: "Nieznany", description: "Sztuka starożytnej Grecji <br> Data powstania: około  lat p.n.e. <br> Lokalizacja: " },
-    { category: "Category 2", name: "", image: "", author: "Nieznany", description: "Sztuka starożytnej Grecji <br> Data powstania: około  lat p.n.e. <br> Lokalizacja: " },
-    { category: "Category 2", name: "", image: "", author: "Nieznany", description: "Sztuka starożytnej Grecji <br> Data powstania: około  lat p.n.e. <br> Lokalizacja: " },
-    { category: "Category 2", name: "", image: "", author: "Nieznany", description: "Sztuka starożytnej Grecji <br> Data powstania: około  lat p.n.e. <br> Lokalizacja: " },
-
 
 
     // Można dodać więcej
