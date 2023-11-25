@@ -376,9 +376,7 @@ const paintings = [
     { category: "Category 4", name: "Sąd Ostateczny", image: "https://upload.wikimedia.org/wikipedia/commons/8/88/Rogier_van_der_Weyden_001.jpg", author: "Rogier van der Weyden", description: "Sztuka protorenesansu <br> Data powstania: 1444-1452 rok n.e. <br> Lokalizacja: Hôtel-Dieu, Beaune" },
     { category: "Category 4", name: "Zdjęcie z krzyża", image: "https://niezlasztuka.net/wp-content/uploads/2018/08/Rogier_van_der_Weyden_zdjecie-z-krzyza-prado.jpg", author: "Rogier van der Weyden", description: "Sztuka protorenesansu <br> Data powstania: 1435 rok n.e. <br> Lokalizacja: Prado, Madryt" },
     { category: "Category 4", name: "Czytająca Maria Magdalena", image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/The_Magdalen_Reading_-_Rogier_van_der_Weyden.jpg/300px-The_Magdalen_Reading_-_Rogier_van_der_Weyden.jpg", author: "Rogier van der Weyden", description: "Sztuka protorenesansu <br> Data powstania: 1435 rok n.e. <br> Lokalizacja: National Gallery w Londynie" },
-    { category: "Category 4", name: "", image: "", author: "", description: "Sztuka wczesnego renesansu <br> Data powstania: rok n.e. <br> Lokalizacja: " },
-    { category: "Category 5", name: "", image: "", author: "", description: "Barok <br> Data powstania: rok n.e. <br> Lokalizacja: " },
-    { category: "Category 5", name: "", image: "", author: "", description: "Barok <br> Data powstania: rok n.e. <br> Lokalizacja: " },
+
    
 
 
