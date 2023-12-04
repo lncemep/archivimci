@@ -8,6 +8,10 @@
     }
 
     body {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
         min-height: 500px;
         background-image: url(https://images2.alphacoders.com/941/941898.jpg);
         text-align: center;

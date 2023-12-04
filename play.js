@@ -532,3 +532,4 @@ reloadButton.addEventListener('click', function () {
     // Use the location object to reload the current page
     location.reload();
 });
+
