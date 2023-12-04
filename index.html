@@ -1,0 +1,20 @@
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect Page</title>
+    <script>
+        // JavaScript code to detect the device type and redirect accordingly
+        var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+        if (isMobile) {
+            window.location.href = "./mobile.html";
+        } else {
+            window.location.href = "./desktop.html";
+        }
+    </script>
+</head>
+<body>
+    <!-- You can include a message or loading spinner here -->
+</body>
+</html>
