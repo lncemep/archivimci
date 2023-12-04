@@ -2,20 +2,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirect Page</title>
+    <title>Archivinci</title>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // JavaScript code to detect the device type and redirect accordingly
-            var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        // JavaScript code to detect the device type and redirect accordingly without changing the URL
+        var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
-            if (isMobile) {
-                window.history.pushState({}, "", "mobile.html");
-                // window.location.href = "mobile.html"; // Uncomment this line if you want an immediate redirection
-            } else {
-                window.history.pushState({}, "", "desktop.html");
-                // window.location.href = "desktop.html"; // Uncomment this line if you want an immediate redirection
-            }
-        });
+        if (isMobile) {
+            history.replaceState(null, null, "mobile.html");
+            // Load mobile content or perform additional actions for mobile
+        } else {
+            history.replaceState(null, null, "desktop.html");
+            // Load desktop content or perform additional actions for desktop
+        }
     </script>
 </head>
 <body>
