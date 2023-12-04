@@ -4,15 +4,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Archivinci</title>
     <script>
-        // JavaScript code to detect the device type and redirect accordingly without changing the URL
+        // JavaScript code to detect the device type and redirect accordingly without changing the URL visibly
         var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
         if (isMobile) {
-            history.replaceState(null, null, "mobile.html");
-            // Load mobile content or perform additional actions for mobile
+            window.location.replace("mobile.html");
         } else {
-            history.replaceState(null, null, "desktop.html");
-            // Load desktop content or perform additional actions for desktop
+            window.location.replace("desktop.html");
         }
     </script>
 </head>
