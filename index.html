@@ -1,8 +1,10 @@
+<!DOCTYPE html>
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Archivinci</title>
+    <link type="image/png" rel="icon" href="./icon_64_64.png" />
     <script>
         // JavaScript code to detect the device type and redirect accordingly without changing the URL visibly
         var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
@@ -12,6 +14,15 @@
         } else {
             window.location.replace("desktop");
         }
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GT-T5N4RFS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'GT-T5N4RFS');
     </script>
 </head>
 <body>

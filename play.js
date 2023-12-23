@@ -499,7 +499,7 @@ const cardTitle = document.querySelector('.back .painting-title'); // Select the
 const cardAuthor = document.querySelector('.back .painting-author'); // Select the painting author element
 const cardDescription = document.querySelector('.back .painting-description'); // Select the painting description element
 const flipCardButton = document.getElementById('flipCard');
-const nextButton = document.getElementById('nextButton'); // Assuming you have a "Next" button
+const button = document.getElementById('button'); // Assuming you have a "Next" button
 
 // Funkcja przełączania "odwróconej" klasy
 function toggleFlip() {
@@ -513,7 +513,7 @@ clickableImage.addEventListener('click', toggleFlip);
 flipCardButton.addEventListener('click', changePainting);
 
 // Dodaj detektor zdarzeń kliknięcia do przycisku DALEJ->, aby zmienić obraz
-nextButton.addEventListener('click', changePainting);
+button.addEventListener('click', changePainting);
 
 // Dodanie detektorów zdarzeń do pól wyboru kategorii
 const categoryCheckboxes = document.querySelectorAll('.category-checkbox');
@@ -532,4 +532,3 @@ reloadButton.addEventListener('click', function () {
     // Use the location object to reload the current page
     location.reload();
 });
-
